@@ -1,0 +1,67 @@
+# Arquivos executáveis
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+
+# Arquivos de compilação
+*.ilk
+*.pdb
+*.exp
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.sdf
+*.opensdf
+*.sln.docstates
+.vscode
+
+# Arquivos de build
+build/
+Debug/
+Release/
+x64/
+x86/
+.vs/
+bin/
+obj/
+
+# Arquivos de backup
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+*.orig
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.cache
+*.temp
+
+# Arquivos de IDE (exceto configurações essenciais)
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos específicos do DevC++
+*.dev
+*.layout
+*.depend
+

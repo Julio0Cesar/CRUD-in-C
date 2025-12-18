@@ -1,31 +1,190 @@
 # Sistema de Gerenciamento de Closet
-Este projeto é um Sistema de Gerenciamento de Closet desenvolvido em linguagem C. Ele permite que você organize suas peças de roupas de forma fácil e eficiente. Com este sistema, você pode adicionar, visualizar, atualizar e excluir peças de roupas do seu closet.
 
-## Funcionalidades
-Adicionar peça de roupa: Você pode adicionar uma nova peça de roupa ao seu closet. Informe o tipo de roupa, cor, tamanho e outras informações relevantes.
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![CRUD](https://img.shields.io/badge/CRUD-Operations-green?style=for-the-badge)
 
-Visualizar peças de roupa: Veja todas as peças de roupa cadastradas no seu closet. Você pode ver detalhes como tipo, cor, tamanho e disponibilidade.
+Um sistema completo de gerenciamento de closet desenvolvido em **C**, permitindo organizar suas peças de roupas de forma fácil e eficiente através de uma interface interativa no console.
 
-Atualizar peça de roupa: Caso queira modificar alguma informação de uma peça de roupa, você pode atualizá-la. Altere o tipo, cor, tamanho ou qualquer outro atributo.
+![C](CRUD/picture/Language.png)
 
-Excluir peça de roupa: Se desejar remover uma peça de roupa do seu closet, basta selecioná-la e excluir. Ela será removida permanentemente.
+## 📋 Sobre
 
-## Compilação e Execução
-Para compilar e executar o projeto em seu sistema, siga as seguintes etapas:
+Este projeto implementa um sistema CRUD (Create, Read, Update, Delete) para gerenciamento de peças de roupa. O sistema oferece uma interface de menu interativa com navegação por setas do teclado, permitindo adicionar, visualizar, atualizar e excluir peças do seu closet.
 
-1. Certifique-se de ter um compilador de C instalado em sua máquina, como DEVC++.
-2. Faça o download ou clone este repositório em seu computador.
-3. Navegue até o diretório onde os arquivos do projeto estão localizados.
-4. Execute o comando de compilação.
+## ✨ Funcionalidades
 
-> E utilize as setas do teclado para selecionar as opções.
+- ✅ **Criar peça de roupa**: Adicione novas peças ao closet informando ID, cor, tamanho e aspecto
+- ✅ **Visualizar peça**: Busque e visualize detalhes de peças cadastradas pelo ID
+- ✅ **Atualizar peça**: Modifique informações de peças existentes
+- ✅ **Excluir peça**: Remova peças do closet permanentemente
+- ✅ **Menu interativo**: Navegação intuitiva usando setas do teclado
+- ✅ **Exibição de data/hora**: Mostra data e hora atual no menu principal
+- ✅ **Animações de loading**: Feedback visual durante carregamento e fechamento
 
-Agora você pode interagir com o Sistema de Gerenciamento de Closet através do menu apresentado no console.
+## 🎯 Características Técnicas
 
-## Contribuição
-Se você deseja contribuir para o aprimoramento deste projeto, sinta-se à vontade para enviar pull requests ou relatar problemas através dos issues do GitHub. Sua contribuição é muito bem-vinda!
+- **Capacidade**: Suporta até 20 peças de roupa em memória
+- **Interface**: Menu interativo com navegação por setas (↑↓) e Enter
+- **Estrutura de dados**: Cada peça contém:
+  - ID (identificador único)
+  - Cor
+  - Tamanho
+  - Aspecto
+- **Sistema operacional**: Desenvolvido para Windows (usa `conio.h` e `Windows.h`)
 
-## Licença
-Este projeto está licenciado sob a Licença MIT. Leia o arquivo LICENSE para obter mais informações.
+## 🛠️ Requisitos
 
-Aproveite o closet! Se tiver alguma dúvida, entre em contato comigo pelo email juliocesar70777077@gmail.com
+- **Sistema Operacional**: Windows
+- **Compilador C**: 
+  - DevC++ (recomendado)
+  - MinGW
+  - Visual Studio
+  - Qualquer compilador C compatível com Windows
+
+## 📦 Compilação e Execução
+
+### Método 1: Usando DevC++
+
+1. Abra o DevC++
+2. Vá em **File → Open** e selecione `CRUD/CRUD.c`
+3. Pressione **F11** para compilar e executar
+   - Ou vá em **Execute → Compile & Run**
+
+### Método 2: Usando linha de comando (MinGW)
+
+1. Abra o Prompt de Comando ou PowerShell
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd CRUD-in-C\CRUD
+   ```
+3. Compile o programa:
+   ```bash
+   gcc CRUD.c -o CRUD.exe
+   ```
+4. Execute:
+   ```bash
+   CRUD.exe
+   ```
+
+### Método 3: Usando Visual Studio
+
+1. Abra o Visual Studio
+2. Crie um novo projeto "Console Application"
+3. Adicione o arquivo `CRUD.c` ao projeto
+4. Compile e execute (F5)
+
+## 🎮 Como Usar
+
+### Navegação no Menu
+
+- **Setas ↑↓**: Navegue entre as opções do menu
+- **Enter**: Selecione a opção desejada
+- **Opções disponíveis**:
+  1. Create a new shirt - Adicionar nova peça
+  2. Read a shirt - Visualizar peça existente
+  3. Update a shirt - Atualizar peça existente
+  4. Delete a shirt - Excluir peça
+  5. Exit - Sair do programa
+
+### Adicionar uma Peça
+
+1. Selecione "Create a new shirt" no menu
+2. Informe os dados solicitados:
+   - **ID**: Número identificador único
+   - **Color**: Cor da peça
+   - **Size**: Tamanho da peça
+   - **Aspect**: Aspecto/característica da peça
+3. A peça será adicionada ao closet
+
+### Visualizar uma Peça
+
+1. Selecione "Read a shirt" no menu
+2. Informe o ID da peça que deseja visualizar
+3. Os detalhes da peça serão exibidos
+
+### Atualizar uma Peça
+
+1. Selecione "Update a shirt" no menu
+2. Informe o ID da peça que deseja atualizar
+3. Digite os novos dados
+4. A peça será atualizada
+
+### Excluir uma Peça
+
+1. Selecione "Delete a shirt" no menu
+2. Informe o ID da peça que deseja excluir
+3. A peça será removida permanentemente
+
+## 📁 Estrutura do Projeto
+
+```
+CRUD-in-C/
+├── CRUD/
+│   └── CRUD.c          # Código-fonte principal
+├── README.md           # Este arquivo
+└── .gitignore          # Arquivos ignorados pelo Git
+```
+
+## 💻 Código
+
+O programa utiliza:
+- **Estruturas**: `struct closet` para armazenar dados das peças
+- **Funções CRUD**:
+  - `createShirt()` - Criar nova peça
+  - `readShirt()` - Ler peça existente
+  - `updateShirt()` - Atualizar peça
+  - `deleteShirt()` - Excluir peça
+- **Interface**: Menu interativo com navegação por teclado
+- **Bibliotecas**: 
+  - `stdio.h` - Entrada/saída
+  - `stdlib.h` - Funções utilitárias
+  - `string.h` - Manipulação de strings
+  - `time.h` - Data e hora
+  - `conio.h` - Controle de console (Windows)
+  - `Windows.h` - Funções do Windows
+
+## 🔧 Limitações
+
+- Armazena dados apenas em memória (não persiste após fechar o programa)
+- Capacidade máxima de 20 peças
+- Funciona apenas no Windows (depende de bibliotecas específicas)
+- Não possui validação de entrada avançada
+
+## 🚀 Melhorias Futuras
+
+- [ ] Persistência de dados em arquivo
+- [ ] Suporte multiplataforma (Linux/macOS)
+- [ ] Validação de entrada mais robusta
+- [ ] Listagem de todas as peças cadastradas
+- [ ] Busca por outros critérios (cor, tamanho, etc.)
+- [ ] Interface gráfica (GUI)
+- [ ] Banco de dados para armazenamento
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+- Reportar bugs através de issues
+- Sugerir novas funcionalidades
+- Enviar pull requests com melhorias
+- Melhorar a documentação
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 📧 Contato
+
+Para dúvidas, sugestões ou colaborações:
+- **Email**: juliocesar70777077@gmail.com
+
+## 🙏 Agradecimentos
+
+- Comunidade de programação C
+- Desenvolvedores de ferramentas open source
+
+---
+
+Desenvolvido com ❤️ em C para Windows
+
+**Aproveite o seu closet organizado!** 👔👗
